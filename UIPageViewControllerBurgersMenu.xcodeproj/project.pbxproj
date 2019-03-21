@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AC2E6CA12243AA21007A5C22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6CA02243AA21007A5C22 /* AppDelegate.swift */; };
-		AC2E6CA32243AA21007A5C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6CA22243AA21007A5C22 /* ViewController.swift */; };
 		AC2E6CA62243AA21007A5C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6CA42243AA21007A5C22 /* Main.storyboard */; };
 		AC2E6CA82243AA23007A5C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6CA72243AA23007A5C22 /* Assets.xcassets */; };
 		AC2E6CAB2243AA23007A5C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2E6CA92243AA23007A5C22 /* LaunchScreen.storyboard */; };
+		AC2E6CB32243AA70007A5C22 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6CB22243AA70007A5C22 /* MainPageViewController.swift */; };
+		AC2E6CB52243AA8B007A5C22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6CB42243AA8B007A5C22 /* ViewController.swift */; };
+		AC2E6CB72243ACF9007A5C22 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2E6CB62243ACF9007A5C22 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC2E6C9D2243AA21007A5C22 /* UIPageViewControllerBurgersMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewControllerBurgersMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2E6CA02243AA21007A5C22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC2E6CA22243AA21007A5C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC2E6CA52243AA21007A5C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC2E6CA72243AA23007A5C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC2E6CAA2243AA23007A5C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2E6CAC2243AA23007A5C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC2E6CB22243AA70007A5C22 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		AC2E6CB42243AA8B007A5C22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC2E6CB62243ACF9007A5C22 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				AC2E6CA02243AA21007A5C22 /* AppDelegate.swift */,
-				AC2E6CA22243AA21007A5C22 /* ViewController.swift */,
 				AC2E6CA42243AA21007A5C22 /* Main.storyboard */,
+				AC2E6CB22243AA70007A5C22 /* MainPageViewController.swift */,
+				AC2E6CB62243ACF9007A5C22 /* Helper.swift */,
+				AC2E6CB42243AA8B007A5C22 /* ViewController.swift */,
 				AC2E6CA72243AA23007A5C22 /* Assets.xcassets */,
 				AC2E6CA92243AA23007A5C22 /* LaunchScreen.storyboard */,
 				AC2E6CAC2243AA23007A5C22 /* Info.plist */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2E6CA32243AA21007A5C22 /* ViewController.swift in Sources */,
+				AC2E6CB52243AA8B007A5C22 /* ViewController.swift in Sources */,
+				AC2E6CB32243AA70007A5C22 /* MainPageViewController.swift in Sources */,
 				AC2E6CA12243AA21007A5C22 /* AppDelegate.swift in Sources */,
+				AC2E6CB72243ACF9007A5C22 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
