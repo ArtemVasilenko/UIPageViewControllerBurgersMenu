@@ -13,3 +13,16 @@ struct Burgers {
     let image = UIImage()
     let price = String()
 }
+
+struct Add {
+   static func burgers() -> UIImageView {
+        let iv = UIImageView()
+        
+        for i in Burgers.arrNamesImage {
+            iv.image = UIImage(named: i)
+        }
+        
+        return iv
+        
+    }
+}

@@ -13,7 +13,7 @@
         <!--Main Page View Controller-->
         <scene sceneID="8XD-7K-MaM">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="dCI-Xt-rWu" customClass="MainPageViewController" customModule="UIPageViewControllerBurgersMenu" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="dCI-Xt-rWu" customClass="MainPageViewController" customModule="UIPageViewControllerBurgersMenu" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zqx-f2-Gvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-114" y="121"/>
@@ -25,36 +25,9 @@
                     <view key="view" contentMode="scaleToFill" id="EEd-KY-qCI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7BN-LC-f7A">
-                                <rect key="frame" x="16" y="20" width="343" height="301"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpc-w2-8Wy">
-                                <rect key="frame" x="147" y="391" width="81" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="71m-j9-uff"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="pPJ-5F-T2B" firstAttribute="trailing" secondItem="7BN-LC-f7A" secondAttribute="trailing" constant="16" id="DgR-bJ-b25"/>
-                            <constraint firstItem="pPJ-5F-T2B" firstAttribute="trailing" secondItem="rpc-w2-8Wy" secondAttribute="trailing" constant="147" id="FXc-Ig-oRB"/>
-                            <constraint firstItem="7BN-LC-f7A" firstAttribute="top" secondItem="pPJ-5F-T2B" secondAttribute="top" id="PLY-3q-GeC"/>
-                            <constraint firstItem="pPJ-5F-T2B" firstAttribute="bottom" secondItem="rpc-w2-8Wy" secondAttribute="bottom" constant="236" id="UJY-h6-cJo"/>
-                            <constraint firstItem="7BN-LC-f7A" firstAttribute="leading" secondItem="pPJ-5F-T2B" secondAttribute="leading" constant="16" id="UUa-S1-C19"/>
-                            <constraint firstItem="rpc-w2-8Wy" firstAttribute="leading" secondItem="pPJ-5F-T2B" secondAttribute="leading" constant="147" id="cgo-Lu-wnc"/>
-                            <constraint firstItem="rpc-w2-8Wy" firstAttribute="top" secondItem="7BN-LC-f7A" secondAttribute="bottom" constant="70" id="gnQ-Hi-35e"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pPJ-5F-T2B"/>
                     </view>
-                    <connections>
-                        <outlet property="myImageView" destination="7BN-LC-f7A" id="Oeh-5X-DkH"/>
-                        <outlet property="myLabel" destination="rpc-w2-8Wy" id="Rd3-1a-84G"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAJ-al-LOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
