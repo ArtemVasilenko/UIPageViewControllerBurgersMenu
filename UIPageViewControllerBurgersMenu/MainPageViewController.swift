@@ -12,6 +12,7 @@ class MainPageViewController: UIPageViewController {
     
     private lazy var arrBurgers: [ViewController] = []
     let pageControl = UIPageControl.appearance()
+    //
 
     override func viewDidLoad() {
         super.viewDidLoad()
