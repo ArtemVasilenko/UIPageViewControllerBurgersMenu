@@ -21,8 +21,6 @@ struct Add {
         for i in Burgers.arrNamesImage {
             iv.image = UIImage(named: i)
         }
-        
         return iv
-        
     }
 }

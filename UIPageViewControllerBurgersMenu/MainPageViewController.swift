@@ -17,14 +17,12 @@ class MainPageViewController: UIPageViewController {
         super.viewDidLoad()
         
         pageControl.pageIndicatorTintColor = #colorLiteral(red: 0.4269909263, green: 0.9705738425, blue: 0.9563221335, alpha: 1)
-        pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-        
+        pageControl.currentPageIndicatorTintColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
         
         for i in Burgers.arrNamesImage {
             createVC(i)
             //someVC.myImageView.image = UIImage(named: i
-            
         }
         
         if let first = arrBurgers.first{
@@ -39,11 +37,16 @@ class MainPageViewController: UIPageViewController {
         let someVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "someVC")
         
         let myImageView = UIImageView()
-        myImageView.frame = CGRect(x: 100, y: 200, width: 400, height: 400)
+        let label = UILabel()
+        
+        myImageView.frame = CGRect(x: 100, y: 200, width: 200, height: 200)
         myImageView.center = someVC.view.center
         myImageView.image = UIImage(named: image)
         
+        label.frame = CGRect(x: 120, y: 500, width: 100, height: 50)
+        
         someVC.view.addSubview(myImageView)
+        someVC.view.addSubview(label)
         
         arrBurgers.append(someVC as! ViewController)
         
@@ -81,6 +84,7 @@ extension MainPageViewController: UIPageViewControllerDataSource {
     }
 
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        
         guard let firstVC = arrBurgers.first,
         let vcIndex = self.arrBurgers.firstIndex(of: firstVC)
             else { return 0 }
